@@ -1,0 +1,48 @@
+/* src/App.css */
+
+/* Общие стили для обеих тем */
+.App {
+  text-align: center;
+}
+
+input, button {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Переменные для светлой темы */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --input-bg: #f0f0f0;
+  --button-bg: #007bff;
+  --button-text: #ffffff;
+}
+
+/* Переменные для тёмной темы */
+.dark {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --input-bg: #2c2c2c;
+  --button-bg: #1a73e8;
+  --button-text: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+input {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border: none;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  cursor: pointer;
+}
